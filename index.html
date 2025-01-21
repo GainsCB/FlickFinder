@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <!-- Link to CSS -->
+         <link rel="stylesheet" href="style.css">
+         <!-- Font Awesome Icons -->
+         <script src="https://kit.fontawesome.com/70b625b65e.js" crossorigin="anonymous"></script>
+   </head>
+   <body>
+        <!-- Header Section -->
+        <header>
+            <nav>
+                <ul>
+                    <li id="logo" class="logo">FlickFinder</li>
+                    <li>
+                       <i id="icon" class="fa-solid fa-film"></i>
+                    </li>
+                    <li>
+                    <li class="li-right">
+                        <!-- Btn links to full list of current movies/tvshows -->
+                        <button id="library-btn" class="secondary-btn">
+                            <i class="fa-solid fa-book"></i>
+                        </button>
+                        <!-- Btn links to add page  -->
+                        <button id="add-btn" class="secondary-btn">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Main Section -->
+        <main>
+            <!-- Welcome Page -->
+            <section class="container">
+                <h2>Less scrolling more watching!</h2>
+                <h3>Pick a category, then click for a flick</h3>
+                <hr />
+                <div class="btn-container">
+                    <button id="show-btn" class="primary-btn">Show</button>
+                    <button id="movie-btn" class="primary-btn">Movie</button>
+                </div> 
+                <button id="find-btn" class="submit-btn">Find me a Flick</button>
+            </section>
+            <!-- Flick Found Page -->
+            <section id="flick-container" class="container">
+                <button id="flick-return-btn" class="accent-btn">X</button>
+                 <div>
+                    <h3 class="sub-heading">We found you a Flick!</h3>
+                    <hr />
+                    <h2 id="random-flick"></h2>
+                  </div>
+            </section>
+            <!-- Library List Page -->
+            <section id="library-container" class="container">
+                 <button id="library-return-btn" class="accent-btn">X</button>
+                 <h3 class="sub-heading">Here is your library</h3>
+                <hr />
+                <div>
+                    <div>
+                        <div  class="list-titles">
+                            <div>
+                                <h4>Movies</h4>
+                            </div>
+                            <div>
+                                <h4>Shows</h4>
+                            </div>
+                        </div>
+                        <div class="lists-container">
+                            <div class="list-container">
+                                <ol id="movie-list-el"></ol>
+                            </div>
+                            <div class="list-container">
+                                <ol id="show-list-el"></ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Add Movies / Shows to Library -->
+            <section id="add-container" class="container">
+                <div>
+                    <button id="add-return-btn" class="accent-btn">X</button>
+                    <h2>Add to Library</h2>
+                    <h3 class="add-heading">Stock your shelves with a new adventure</h3>
+                    <hr />
+                    <div class="btn-container">
+                    <button id="add-show-btn" class="primary-btn">Show</button>
+                    <button id="add-movie-btn" class="primary-btn">Movie</button>
+                    </div> 
+                    <input id="input-el" class="input" placeholder="TV Show / Movie Name">
+                    <button id="submit-btn" class="submit-btn">Submit</button>
+                </div>
+            </section>
+        </main>
+        <script src="index.js"></script>
+   </body>
+</html>
